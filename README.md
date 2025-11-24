@@ -1,6 +1,6 @@
 # Sentry Analyzer
 
-Sentry 에러를 Claude AI가 자동으로 분석해서 GitHub Issue로 만드는 시스템
+Sentry 에러를 Google Gemini AI가 자동으로 분석해서 GitHub Issue로 만드는 시스템
 
 ## 시스템 구조
 
@@ -13,7 +13,7 @@ Sentry 에러를 Claude AI가 자동으로 분석해서 GitHub Issue로 만드�
     ↓
 [GitHub Actions 트리거]
     ↓
-[Claude AI 분석 + Issue 생성]
+[Gemini AI 분석 + Issue 생성]
 ```
 
 ## 이 저장소의 역할
@@ -110,10 +110,11 @@ curl -X POST https://your-project.vercel.app/api/sentry-webhook \
 이 저장소 설정이 완료되면:
 
 1. **inplace 저장소**에 GitHub Actions Workflow 추가
-2. **inplace 저장소**에 Claude 분석 스크립트 추가
+2. **inplace 저장소**에 Gemini AI 분석 스크립트 추가
 3. GitHub Secrets 설정:
-   - `ANTHROPIC_API_KEY`: Claude API 키
+   - `GEMINI_API_KEY`: Google Gemini API 키
    - `SENTRY_AUTH_TOKEN`: Sentry API 토큰
+   - `SENTRY_ORG`: Sentry 조직 slug
 
 ## 파일 구조
 
