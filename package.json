@@ -1,0 +1,25 @@
+{
+  "name": "sentry-analyzer",
+  "version": "1.0.0",
+  "description": "Sentry to GitHub bridge - Triggers GitHub Actions for AI-powered error analysis",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "sentry",
+    "github",
+    "webhook",
+    "error-analysis",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^33.0.0"
+  }
+}
